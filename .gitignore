@@ -1,0 +1,238 @@
+# Enhanced HRM - Git Ignore
+# Excludes large files, checkpoints, and sensitive data
+
+# ==============================================================================
+# MODEL CHECKPOINTS & TRAINING ARTIFACTS (LARGE FILES)
+# ==============================================================================
+
+# GRPO Training Checkpoints
+grpo_stage_*/
+grpo_checkpoints_*/
+enhanced_hrm_grpo_final/
+checkpoint-*/
+*.safetensors
+*.bin
+pytorch_model.bin
+model.safetensors
+
+# Training State Files
+optimizer.pt
+scheduler.pt
+rng_state.pth
+trainer_state.json
+training_args.bin
+
+# Model Weights & Embeddings
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+
+# ==============================================================================
+# WANDB & LOGGING
+# ==============================================================================
+
+# Weights & Biases
+wandb/
+.wandb/
+wandb-metadata.json
+
+# TensorBoard Logs
+runs/
+logs/
+tensorboard/
+events.out.tfevents.*
+
+# Training Logs
+*.log
+*.out
+*.err
+nohup.out
+
+# ==============================================================================
+# DATASETS & CACHE
+# ==============================================================================
+
+# HuggingFace Cache
+.cache/
+cache/
+transformers_cache/
+datasets_cache/
+__pycache__/
+
+# Dataset Files
+*.jsonl
+*.csv
+*.tsv
+raw_text/
+data/
+datasets/
+
+# Tokenizer Cache
+tokenizer_cache/
+.transformers_cache/
+
+# ==============================================================================
+# PYTHON & ENVIRONMENT
+# ==============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+.venv
+.ENV
+.env.local
+.env.*.local
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# ==============================================================================
+# SYSTEM & IDE FILES  
+# ==============================================================================
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# ==============================================================================
+# TEMPORARY & BUILD FILES
+# ==============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+.tmp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Compiled files
+*.o
+*.a
+*.so
+*.dll
+
+# ==============================================================================
+# SENSITIVE DATA
+# ==============================================================================
+
+# API Keys & Secrets
+.env
+*.key
+*.pem
+*.p12
+secrets.json
+config_private.py
+
+# Personal notes
+notes.txt
+TODO.txt
+personal/
+
+# ==============================================================================
+# LARGE GENERATED FILES
+# ==============================================================================
+
+# Large output files
+output/
+results/
+experiments/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Generated documentation
+docs/_build/
+site/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ==============================================================================
+# SPECIFIC TO ENHANCED HRM
+# ==============================================================================
+
+# Test outputs
+test_outputs/
+generation_samples/
+
+# Experimental configs
+experiment_*.py
+test_*.json
+
+# Local configuration overrides
+local_config.py
+user_settings.json
+
+# Performance profiling
+*.prof
+*.profile
+profile_results/
+
+# Debug dumps
+debug/
+dumps/
+core.*
+
+# =============================================================================
+# KEEP THESE SMALL FILES
+# =============================================================================
+# !README.md
+# !requirements.txt  
+# !*.py (source code)
+# !*.json (small config files)
+# !*.yaml
+# !*.yml
+# !LICENSE

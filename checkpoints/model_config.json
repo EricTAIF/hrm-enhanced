@@ -1,0 +1,10 @@
+{
+  "vocab_size": 32019,
+  "d_model": 256,
+  "n_heads": 4,
+  "n_planner_layers": 2,
+  "n_worker_layers": 3,
+  "max_cycles": 6,
+  "max_seq_len": 512,
+  "tokenizer_name": "microsoft/Phi-3-mini-4k-instruct"
+}
